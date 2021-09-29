@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: hsl(225, 100%, 94%);
+            background-attachment: fixed;
+            background-position: top;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        
+        .container {
+            margin: 50px auto;
+            width: 450px;
+            background-color: white;
+            text-align: center;
+            border-radius: 19px;
+        }
+        
+        .logo img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .text h2 {
+            letter-spacing: 1px;
+            color: rgb(1, 1, 43);
+        }
+        
+        .text p {
+            font-size: 16px;
+            margin-left: 50px;
+            margin-right: 50px;
+            color: #9595B0;
+        }
+        
+        .plan {
+            height: 88px;
+            position: relative;
+            margin-left: 45px;
+            margin-right: 45px;
+            background-color: hsl(225, 100%, 98%);
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+        
+        .plan img {
+            position: absolute;
+            left: 25px;
+            top: 21px
+        }
+        
+        .plan a:link {
+            position: absolute;
+            right: 25px;
+            top: 35px;
+            color: hsl(245, 75%, 52%);
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .plan a:hover {
+            text-decoration: none;
+            opacity: 0.75
+        }
+        
+        .price {
+            margin-top: -0.7em;
+            color: hsl(224, 23%, 55%);
+            opacity: 0.9;
+        }
+        
+        .head {
+            font-weight: bold;
+            color: hsl(223, 47%, 23%);
+            font-size: 15px;
+        }
+        
+        .planContainer {
+            position: relative;
+            left: -42px;
+            top: 20px;
+            font-size: 14.5px;
+        }
+        
+        .payment input[type="button"] {
+            width: 355px;
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            height: 46px;
+            border-radius: 10px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            font-size: 13.8px;
+            border-style: hidden;
+            font-weight: bold;
+            box-shadow: 0px 19px 18px -2px rgb(206, 212, 216);
+        }
+        
+        .payment input[type="button"]:hover {
+            opacity: 0.7;
+        }
+        
+        .cancel a:link {
+            text-decoration: none;
+            color: hsl(224, 23%, 55%);
+            font-weight: 800;
+            font-size: 13px;
+        }
+        
+        .cancel a:hover {
+            color: hsl(223, 47%, 23%);
+        }
+        
+        .cancel {
+            margin-top: 7px;
+            padding-bottom: 42px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/illustration-hero.svg" alt="hero logo"></div>
+
+        <div class="two">
+
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p>You can now listen to millions of songs, audiobooks,and podcasting on any device anywhere you like!</p>
+            </div>
+            <div class="plan">
+                <img src="images/icon-music.svg" alt="icon-music" />
+                <div class="planContainer">
+                    <p class="head">Annual Plan</p>
+                    <p class="price">$59.99/year</p>
+                </div>
+                <a href="#">Change</a>
+            </div>
+            <div class="payment"><input type="button" value="Proceed to Payment"></div>
+            <br>
+            <div class="cancel"><a href="#">Cancel Order</a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
